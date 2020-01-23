@@ -1,0 +1,17 @@
+{% extends 'lesson_3/cbs.html' %}
+
+{% block title %}python starter{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h3>{{text}}</h3>
+    <ol>
+    {% for lesson in python_starter %}
+        <li>{{ lesson }}</li>
+        <a href="/lesson_3/respond/">Oтзывы</a>
+        <br>
+        <br>
+    {% endfor %}
+    </ol>
+</div>
+{% endblock %}

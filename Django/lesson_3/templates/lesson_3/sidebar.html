@@ -1,0 +1,13 @@
+<div class="sidebar">
+        <ul>
+        {% for level in levels%}
+            {% if forloop.first %}
+            <li><a href="/lesson_3/starter/">{{level}}</a></li>
+            <br>
+            {% else %}
+            <li>{{level}}</li>
+            <br>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </div>

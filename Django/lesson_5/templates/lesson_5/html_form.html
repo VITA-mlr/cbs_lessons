@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>html_forms</title>
+</head>
+<body>
+    <h1 align="center">Форма HTML виду</h1>
+    <h2>- Форма GET метода</h2>
+    <form action="/lesson_5/get" method="get">
+        <input name="get_input" placeholder="Введите текст">
+        <button type="submit">get</button>
+    </form>
+    <br> <br>
+
+     <hr />
+
+    <br>
+    <h2>- Форма POST метода</h2>
+    <form action="/lesson_5/post" method="post">
+        {% csrf_token %}
+        <input name="post_input" placeholder="Введите текст">
+        <button type="submit">post</button>
+    </form>
+</body>
+</html>
